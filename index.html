@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hardik Pal | Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #f1f5f9;
+            line-height: 1.7;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111827;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 75px 10%;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 60px);
+            margin: 15px 0;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .tag {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            width: fit-content;
+        }
+
+        .btn:hover {
+            background: #0369a1;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: #38bdf8;
+        }
+
+        .about p {
+            color: #cbd5e1;
+            max-width: 850px;
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: #172033;
+            padding: 22px;
+            border-radius: 10px;
+            border: 1px solid #263449;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            margin-bottom: 12px;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            background: #111827;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 650px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            section {
+                padding: 55px 7%;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">Hardik.</div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+        <div class="tag">HELLO, WELCOME TO MY PORTFOLIO</div>
+
+        <h1>Hi, I'm <span>Hardik Pal</span></h1>
+
+        <h3>Aspiring Data Analyst | Data Science Student</h3>
+
+        <p>
+            I am a Computer Science Engineering student specializing
+            in Data Science. I enjoy working with data, solving problems
+            and exploring new technologies.
+        </p>
+
+        <a href="#projects" class="btn">Explore My Projects</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am pursuing B.Tech in Computer Science Engineering
+            with a specialization in Data Science.
+
+            I am passionate about data analytics, programming and
+            technology. My current learning journey includes Python,
+            SQL, Excel, Power BI and statistics.
+
+            My goal is to become a skilled Data Analyst and gradually
+            grow into the field of Data Science.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>My Technical Skills</h2>
+
+        <div class="skills">
+
+            <div class="card">
+                <h3>Python</h3>
+                <p>Programming and data analysis.</p>
+            </div>
+
+            <div class="card">
+                <h3>SQL</h3>
+                <p>Database management and queries.</p>
+            </div>
+
+            <div class="card">
+                <h3>Excel</h3>
+                <p>Data cleaning and analysis.</p>
+            </div>
+
+            <div class="card">
+                <h3>Power BI</h3>
+                <p>Data visualization and dashboards.</p>
+            </div>
+
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Basic website development.</p>
+            </div>
+
+            <div class="card">
+                <h3>Statistics</h3>
+                <p>Statistical analysis and mathematics.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Smart Healthcare Monitoring System</h3>
+
+                <p>
+                    An IoT-based project designed to monitor
+                    health parameters and generate alerts.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Student Data Analysis</h3>
+
+                <p>
+                    Exploring student performance data through
+                    data analysis and visualization.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    A responsive personal website built using
+                    HTML, CSS and JavaScript.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Interested in connecting or collaborating?</p>
+
+        <p>
+            Email:
+            <a href="mailto:YOUR_EMAIL@example.com">
+                hardikpalking2011@gmail.com
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/YOUR_USERNAME">
+                https://github.com/Hardik-Pal28
+            </a>
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© <span id="year"></span> Hardik Pal. All Rights Reserved.</p>
+        <p>Built with HTML, CSS and JavaScript.</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
